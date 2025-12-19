@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калинина Маргарита — Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo">MK</a>
+            <button class="nav__burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu">
+                <li><a href="#about" class="nav__link">Обо мне</a></li>
+                <li><a href="#skills" class="nav__link">Навыки</a></li>
+                <li><a href="#projects" class="nav__link">Проекты</a></li>
+                <li><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
+                <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section id="hero" class="hero">
+        <div class="hero__container">
+            <div class="hero__avatar-wrapper">
+                <img src="avatar.png" alt="Маргарита Калинина" class="hero__avatar">
+                <div class="hero__avatar-glow"></div>
+            </div>
+            <div class="hero__content">
+                <p class="hero__greeting">Привет! Я</p>
+                <h1 class="hero__name">Маргарита<br>Калинина</h1>
+                <p class="hero__role">Студентка СПбГУПТД</p>
+                <a href="#projects" class="hero__cta">Смотреть работы</a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint">
+            <span>Скролль вниз</span>
+            <div class="hero__scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- О себе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title__icon">👤</span>
+                Обо мне
+            </h2>
+            <div class="about__content">
+                <div class="about__card">
+                    <div class="about__text">
+                        <p>Привет! Меня зовут <strong>Маргарита Калинина</strong>.</p>
+                        <p>Я студентка Санкт-Петербургского государственного университета промышленных технологий и дизайна (СПбГУПТД), группа <strong>5-МВ-4</strong>.</p>
+                        <p>Увлекаюсь цифровым искусством, анимацией и созданием иллюстраций. Люблю экспериментировать с разными стилями и инструментами.</p>
+                    </div>
+                </div>
+                <div class="about__education">
+                    <h3 class="about__subtitle">🎓 Образование</h3>
+                    <div class="education-card">
+                        <div class="education-card__header">
+                            <span class="education-card__icon">🏛️</span>
+                            <div>
+                                <h4>СПбГУПТД</h4>
+                                <p>Санкт-Петербургский государственный университет промышленных технологий и дизайна</p>
+                            </div>
+                        </div>
+                        <div class="education-card__details">
+                            <span class="education-card__badge">Группа 5-МВ-4</span>
+                            <span class="education-card__badge">Студент</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки (Инвентарь) -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title__icon">🎒</span>
+                Инвентарь навыков
+            </h2>
+            <p class="skills__subtitle">Мои инструменты для создания магии ✨</p>
+            <div class="inventory">
+                <div class="inventory__grid">
+                    <div class="inventory__slot inventory__slot--legendary" data-tooltip="Adobe Photoshop — Легендарный">
+                        <div class="inventory__item">
+                            <div class="inventory__icon">
+                                <span>Ps</span>
+                            </div>
+                            <div class="inventory__rarity"></div>
+                        </div>
+                        <span class="inventory__name">Photoshop</span>
+                    </div>
+                    <div class="inventory__slot inventory__slot--epic" data-tooltip="Adobe Animate — Эпический">
+                        <div class="inventory__item">
+                            <div class="inventory__icon">
+                                <span>An</span>
+                            </div>
+                            <div class="inventory__rarity"></div>
+                        </div>
+                        <span class="inventory__name">Animate</span>
+                    </div>
+                    <div class="inventory__slot inventory__slot--epic" data-tooltip="Adobe Premiere Pro — Эпический">
+                        <div class="inventory__item">
+                            <div class="inventory__icon">
+                                <span>Pr</span>
+                            </div>
+                            <div class="inventory__rarity"></div>
+                        </div>
+                        <span class="inventory__name">Premiere</span>
+                    </div>
+                    <div class="inventory__slot inventory__slot--rare" data-tooltip="Krita — Редкий">
+                        <div class="inventory__item">
+                            <div class="inventory__icon">
+                                <span>Kr</span>
+                            </div>
+                            <div class="inventory__rarity"></div>
+                        </div>
+                        <span class="inventory__name">Krita</span>
+                    </div>
+                    <div class="inventory__slot inventory__slot--empty"></div>
+                    <div class="inventory__slot inventory__slot--empty"></div>
+                    <div class="inventory__slot inventory__slot--empty"></div>
+                    <div class="inventory__slot inventory__slot--empty"></div>
+                </div>
+                <div class="inventory__legend">
+                    <div class="legend-item legend-item--legendary">
+                        <span class="legend-item__color"></span>
+                        Легендарный
+                    </div>
+                    <div class="legend-item legend-item--epic">
+                        <span class="legend-item__color"></span>
+                        Эпический
+                    </div>
+                    <div class="legend-item legend-item--rare">
+                        <span class="legend-item__color"></span>
+                        Редкий
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title__icon">🎨</span>
+                Мои проекты
+            </h2>
+
+            <!-- Проект KKAT -->
+            <div class="project">
+                <h3 class="project__title">KKAT — Персонаж с эмоциями</h3>
+                <p class="project__description">Серия иллюстраций персонажа-кота с различными эмоциями и настроениями. Создано в Krita и Adobe.</p>
+                
+                <div class="project__showcase">
+                    <div class="project__main-images">
+                        <div class="project__main-image">
+                            <img src="projects/kkat/poster.png" alt="KKAT Poster" loading="lazy">
+                        </div>
+                        <div class="project__main-image">
+                            <img src="projects/kkat/Untitled.png" alt="KKAT Design" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <h4 class="project__emotions-title">Эмоции персонажа:</h4>
+                    <div class="emotions-grid">
+                        <div class="emotion-card">
+                            <img src="projects/kkat/happy.png" alt="Happy" loading="lazy">
+                            <span>Happy</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/sad.png" alt="Sad" loading="lazy">
+                            <span>Sad</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/calm.png" alt="Calm" loading="lazy">
+                            <span>Calm</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/love.png" alt="Love" loading="lazy">
+                            <span>Love</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/fine.png" alt="Fine" loading="lazy">
+                            <span>Fine</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/bruh.png" alt="Bruh" loading="lazy">
+                            <span>Bruh</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/sleep.png" alt="Sleep" loading="lazy">
+                            <span>Sleep</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/standart.png" alt="Standard" loading="lazy">
+                            <span>Standard</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/kat_color.png" alt="Color" loading="lazy">
+                            <span>Color</span>
+                        </div>
+                        <div class="emotion-card">
+                            <img src="projects/kkat/kat_color1.png" alt="Color Alt" loading="lazy">
+                            <span>Color Alt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фотокнига -->
+            <div class="project">
+                <h3 class="project__title">📚 Фотокнига</h3>
+                <p class="project__description">Дизайн и вёрстка фотокниги. Каждый разворот — отдельная история.</p>
+                
+                <div class="photobook">
+                    <div class="photobook__gallery">
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига.jpg" alt="Обложка" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига3.jpg" alt="Страница 3" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига4.jpg" alt="Страница 4" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига5.jpg" alt="Страница 5" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига6.jpg" alt="Страница 6" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига7.jpg" alt="Страница 7" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига8.jpg" alt="Страница 8" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига9.jpg" alt="Страница 9" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига10.jpg" alt="Страница 10" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига11.jpg" alt="Страница 11" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига12.jpg" alt="Страница 12" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига13.jpg" alt="Страница 13" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига14.jpg" alt="Страница 14" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига15.jpg" alt="Страница 15" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига16.jpg" alt="Страница 16" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига17.jpg" alt="Страница 17" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига18.jpg" alt="Страница 18" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига19.jpg" alt="Страница 19" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига20.jpg" alt="Страница 20" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига21.jpg" alt="Страница 21" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига22.jpg" alt="Страница 22" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига23.jpg" alt="Страница 23" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига24.jpg" alt="Страница 24" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига25.jpg" alt="Страница 25" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига26.jpg" alt="Страница 26" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига27.jpg" alt="Страница 27" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига28.jpg" alt="Страница 28" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига29.jpg" alt="Страница 29" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига30.jpg" alt="Страница 30" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига31.jpg" alt="Страница 31" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига32.jpg" alt="Страница 32" loading="lazy"></div>
+                        <div class="photobook__item"><img src="projects/photobook/фотокнига33.jpg" alt="Страница 33" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3 class="project__title">🎬 Анимация</h3>
+                <p class="project__description">Анимационный проект, созданный в Adobe Animate.</p>
+                <div class="video-container">
+                    <video controls>
+                        <source src="projects/video/Video_Калинина М.И.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title__icon">📬</span>
+                Контакты
+            </h2>
+            <p class="contacts__subtitle">Свяжитесь со мной!</p>
+            <div class="contacts__grid">
+                <a href="mailto:example@email.com" class="contact-card">
+                    <span class="contact-card__icon">📧</span>
+                    <span class="contact-card__label">Email</span>
+                    <span class="contact-card__value">example@email.com</span>
+                </a>
+                <a href="https://t.me/username" class="contact-card" target="_blank" rel="noopener">
+                    <span class="contact-card__icon">💬</span>
+                    <span class="contact-card__label">Telegram</span>
+                    <span class="contact-card__value">@username</span>
+                </a>
+                <a href="https://vk.com/id" class="contact-card" target="_blank" rel="noopener">
+                    <span class="contact-card__icon">🔵</span>
+                    <span class="contact-card__label">VK</span>
+                    <span class="contact-card__value">vk.com/id</span>
+                </a>
+                <a href="https://github.com/username" class="contact-card" target="_blank" rel="noopener">
+                    <span class="contact-card__icon">🐙</span>
+                    <span class="contact-card__label">GitHub</span>
+                    <span class="contact-card__value">github.com/username</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">© 2024 Калинина Маргарита Ивановна</p>
+                <div class="footer__meta">
+                    <p class="footer__ai">
+                        <span class="footer__ai-icon">🤖</span>
+                        Создано с помощью: <strong>Cursor AI</strong> — ~30 минут
+                    </p>
+                    <p class="footer__js">
+                        <span class="footer__js-icon">⚡</span>
+                        JavaScript функционал: <strong>Переключатель темы, плавная прокрутка, адаптивный фон на основе цветов изображений, мобильное меню</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для изображений -->
+    <div class="modal" id="imageModal">
+        <button class="modal__close" aria-label="Закрыть">×</button>
+        <img class="modal__image" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
